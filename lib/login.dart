@@ -13,9 +13,6 @@ class _LoginState extends State<Login> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text("Flutter Academy"),
-      ),
       body: Center(
         child: Padding(
           padding: const EdgeInsets.all(20.0),
