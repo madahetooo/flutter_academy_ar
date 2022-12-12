@@ -6,6 +6,7 @@ import 'package:flutter_academy_ar/register.dart';
 import 'package:flutter_academy_ar/tabbar_widget.dart';
 
 void main() => runApp(MaterialApp(
+  debugShowCheckedModeBanner: false,
   initialRoute: '/tabbarWidget',
   routes: {
     '/login' : (context) => Login(),

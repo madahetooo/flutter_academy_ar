@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_academy_ar/basic_widgets.dart';
+import 'package:flutter_academy_ar/bmi_calculator.dart';
 import 'package:flutter_academy_ar/bottom_navigation_bar_widget.dart';
 import 'package:flutter_academy_ar/list_view_widget.dart';
 import 'package:flutter_academy_ar/toast_widget_.dart';
@@ -65,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const BasicWidgetsScreen()));
+                            builder: (context) => const BMICalculator()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(20),
