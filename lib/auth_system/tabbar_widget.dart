@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_academy_ar/login.dart';
-import 'package:flutter_academy_ar/register.dart';
+import 'package:flutter_academy_ar/auth_system/login.dart';
+import 'package:flutter_academy_ar/auth_system/register.dart';
 
 class TabbarWidget extends StatelessWidget {
   const TabbarWidget({Key? key}) : super(key: key);
@@ -24,7 +24,7 @@ class TabbarWidget extends StatelessWidget {
               ],
             ),
           ),
-          body: const TabBarView(
+          body:  TabBarView(
             children: [
               Login(),
               RegistrationScreen(),

@@ -8,7 +8,7 @@ class DatabaseHelper {
   static final _databaseName = "MyTodos.db";
   static final _databaseVersion = 1;
   static final table = 'my_table';
-  static final columnId = '_id';
+  static final columnId = 'id';
   static final columnName = 'todo';
   static Database? _database;
 

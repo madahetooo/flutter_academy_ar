@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_academy_ar/basic_widgets.dart';
-import 'package:flutter_academy_ar/list_view_widget.dart';
-import 'package:flutter_academy_ar/toast_widget_.dart';
+import 'package:flutter_academy_ar/basic_widget_app/basic_widgets.dart';
+import 'package:flutter_academy_ar/basic_widget_app/list_view_widget.dart';
+import 'package:flutter_academy_ar/basic_widget_app/toast_widget_.dart';
+
 
 class BottomNavigationBarWidget extends StatefulWidget {
   const BottomNavigationBarWidget({Key? key}) : super(key: key);

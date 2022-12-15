@@ -169,7 +169,7 @@ class _TodoListAppState extends State<TodoListApp> {
             ),
             onLongPress: () {
               setState(() {
-                dbHelper.delete(3);
+                dbHelper.delete(todo["id"]);
               });
             },
           ),

@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_academy_ar/basic_widgets.dart';
-import 'package:flutter_academy_ar/bmi_calculator.dart';
-import 'package:flutter_academy_ar/bottom_navigation_bar_widget.dart';
-import 'package:flutter_academy_ar/list_view_widget.dart';
-import 'package:flutter_academy_ar/toast_widget_.dart';
+import 'package:flutter_academy_ar/basic_widget_app/basic_widgets.dart';
+import 'package:flutter_academy_ar/basic_widget_app/bottom_navigation_bar_widget.dart';
+import 'package:flutter_academy_ar/bmi_calculator/bmi_calculator.dart';
+
 import 'package:flutter_academy_ar/todolist_app/todolist_app.dart';
+import 'package:flutter_academy_ar/world_timer_app/ui/choose_location.dart';
+import 'package:flutter_academy_ar/world_timer_app/ui/landing_page.dart';
+import 'package:flutter_academy_ar/world_timer_app/ui/loading.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -132,10 +134,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
                 GestureDetector(
                   onTap: () {
-                    Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                            builder: (context) => const BasicWidgetsScreen()));
+                Navigator.of(context,rootNavigator: true).pushNamed("/loading_screen");
                   },
                   child: Container(
                     padding: const EdgeInsets.all(20),
