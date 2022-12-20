@@ -1,13 +1,17 @@
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_academy_ar/auth_system/login.dart';
+import 'package:flutter_academy_ar/auth_system/tabbar_widget.dart';
 import 'package:flutter_academy_ar/basic_widget_app/basic_widgets.dart';
 import 'package:flutter_academy_ar/basic_widget_app/bottom_navigation_bar_widget.dart';
 import 'package:flutter_academy_ar/bmi_calculator/bmi_calculator.dart';
-import 'package:flutter_academy_ar/chat_app/ui/chats_screen.dart';
+import 'package:flutter_academy_ar/chat_app/ui/chats_list/chats_screen.dart';
 
 import 'package:flutter_academy_ar/todolist_app/todolist_app.dart';
 import 'package:flutter_academy_ar/world_timer_app/ui/choose_location.dart';
 import 'package:flutter_academy_ar/world_timer_app/ui/landing_page.dart';
 import 'package:flutter_academy_ar/world_timer_app/ui/loading.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);
@@ -239,7 +243,7 @@ class _HomeScreenState extends State<HomeScreen> {
       ),
       drawer: Drawer(
         child: Column(
-          children: const [
+          children:  [
             UserAccountsDrawerHeader(
               accountName: Text("Eslam Medhat",
               style: TextStyle(fontWeight: FontWeight.bold,
@@ -285,6 +289,12 @@ class _HomeScreenState extends State<HomeScreen> {
             ListTile(
               title: Text('Logout'),
               leading: Icon(Icons.logout),
+              onTap: ()async{
+                await GoogleSignIn().signOut();
+                await FirebaseAuth.instance.signOut();
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context)=>TabbarWidget()));
+              },
             ),
           ],
         ),

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_academy_ar/chat_app/models/chats.dart';
-import 'package:flutter_academy_ar/chat_app/ui/components/chats_card.dart';
-import 'package:flutter_academy_ar/chat_app/ui/components/fil_outline_button.dart';
-import 'package:flutter_academy_ar/chat_app/ui/message_screen.dart';
+import 'package:flutter_academy_ar/chat_app/ui/chats_list/components/chats_card.dart';
+import 'package:flutter_academy_ar/chat_app/ui/chats_list/components/fil_outline_button.dart';
+import 'package:flutter_academy_ar/chat_app/ui/message_screen/message_screen.dart';
 class ChatsBody extends StatelessWidget {
   const ChatsBody({Key? key}) : super(key: key);
 
