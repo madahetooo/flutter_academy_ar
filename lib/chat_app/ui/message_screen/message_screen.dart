@@ -1,6 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_academy_ar/chat_app/ui/message_screen/message-body.dart';
+import 'package:flutter_academy_ar/chat_app/ui/message_screen/components/message-body.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
 class MessageScreen extends StatefulWidget {

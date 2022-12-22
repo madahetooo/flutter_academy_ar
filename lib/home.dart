@@ -6,6 +6,7 @@ import 'package:flutter_academy_ar/basic_widget_app/basic_widgets.dart';
 import 'package:flutter_academy_ar/basic_widget_app/bottom_navigation_bar_widget.dart';
 import 'package:flutter_academy_ar/bmi_calculator/bmi_calculator.dart';
 import 'package:flutter_academy_ar/chat_app/ui/chats_list/chats_screen.dart';
+import 'package:flutter_academy_ar/reverse_string_app/reverse_string_app.dart';
 
 import 'package:flutter_academy_ar/todolist_app/todolist_app.dart';
 import 'package:flutter_academy_ar/world_timer_app/ui/choose_location.dart';
@@ -207,7 +208,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const BasicWidgetsScreen()));
+                            builder: (context) => ReverseStringApp()));
                   },
                   child: Container(
                     padding: const EdgeInsets.all(20),

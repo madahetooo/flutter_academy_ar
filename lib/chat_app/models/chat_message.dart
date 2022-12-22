@@ -22,7 +22,7 @@ class ChatMessage{
    this.imageUrl,
 });
 }
-// class ChatMessages with ChangeNotifier{
+class ChatMessages with ChangeNotifier{
   List<ChatMessage> chatMessages =[
     ChatMessage(
       text: "Hi Ahmed, How are you? ",
@@ -62,9 +62,9 @@ class ChatMessage{
     ),
   ];
 
-  // void addMessage(ChatMessage message){
-  //   chatMessages.add(message);
-  //   notifyListeners();
-  // }
+  void addMessage(ChatMessage message){
+    chatMessages.add(message);
+    notifyListeners();
+  }
   List<ChatMessage> get getMessageList => chatMessages;
-// }
+}
